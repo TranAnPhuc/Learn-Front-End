@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thẻ table</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Shop bán quần áo</th>
+      </tr>
+      <tr>
+        <td>Áo ba lỗ</td>
+        <td>30.000VNĐ</td>
+      </tr>
+      <tr>
+        <td>Quần jeans</td>
+        <td>30.000VNĐ</td>
+      </tr>
+      <tr>
+        <td>Dây nịt</td>
+        <td>30.000VNĐ</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <!-- thead (định nghĩa phần đầu của bảng. Thường chứa các ô tiêu đề "th" của các cột trong bảng) -->
+      <thead>
+        <tr>
+          <th>Shop bán quần áo</th>
+        </tr>
+      </thead>
+      <!-- tbody (định nghĩa phần thân của bảng. Thường chứa các ô dữ liệu "td" của các cột trong bảng) -->
+      <tbody>
+        <tr>
+          <td>Áo thời trang</td>
+          <td>45.000VNĐ</td>
+        </tr>
+      </tbody>
+      <!-- tfoot (định nghĩa phần cuối của bảng. Thường chứa các ô chú thích, tổng kết hoặc thông tin cuối cùng về bảng) -->
+      <tfoot>
+        <tr>
+          <td>Tổng: 45.000VNĐ</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <!-- colspan (Chỉ định phần tử chiếm bao nhiêu cột) -->
+    <!-- rowspan (chỉ định phần tử chiếm bao nhiêu hàng) -->
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Shop bán quần áo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Áo thời trang</td>
+          <td rowspan="2">45.000VNĐ</td>
+        </tr>
+        <tr>
+          <td>Áo thun</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Tổng: 45.000VNĐ</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

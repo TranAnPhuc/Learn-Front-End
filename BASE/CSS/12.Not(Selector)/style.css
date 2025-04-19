@@ -1,0 +1,9 @@
+/* :not(selector) (Chọn các thẻ h1 loại trừ thẻ p) */
+h1:not(p) {
+  color: red;
+}
+
+/* Selector ở đây cũng có thể là tất cả bộ chọn đã học */
+p:not(:nth-of-type(odd)) {
+  color: rgb(38, 255, 0);
+}

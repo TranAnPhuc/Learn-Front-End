@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Inline, Internal, External</title>
+    <!-- CSS Internal (viết dưới dạng nội bộ, được viết bên trong cặp thẻ <style></style>) -->
+    <style>
+      h2 {
+        color: yellow;
+      }
+    </style>
+
+    <!-- CSS External (viết dưới dạng file bên ngoài có đuôi là .css) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CSS (Cascading Style Sheets) là ngôn ngữ dùng để mô tả giao diện (style) của một tài liệu HTML. 
+    Nó giúp bạn thiết kế bố cục, màu sắc, font chữ, khoảng cách,… cho website. -->
+
+    <!-- CSS Inline (viết dưới dạng nội tuyến, được viết trực tiếp trong thẻ) -->
+    <h1 style="color: blue">Đây là CSS Inline</h1>
+    <h2>Đây là CSS Internal</h2>
+    <h3>Đây là CSS External</h3>
+
+    <!-- 
+            Thứ tự ưu tiên giữa 3 cách đặt CSS:
+        1. CSS Inline (được ưu tiên cao nhất)
+        2. CSS Internal và CSS External (được ưu tiên thứ 2)
+        3. CSS External (được ưu tiên thấp nhất) 
+        *Lưu ý: Trong một số trường hợp External có thể được ưu tiên hơn Internal nếu selector của 1 trong 2 cao hơn.
+    -->
+  </body>
+</html>

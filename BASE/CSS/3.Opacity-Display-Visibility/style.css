@@ -1,0 +1,15 @@
+h2 {
+  /* Có 2 cách truyền giá trị: 
+  1. 0.0 -> 1.0 (mờ nhất - rõ nhất)
+  2. 0% -> 100% 
+  */
+  opacity: 0.5;
+}
+
+h4 {
+  display: none;
+}
+
+h6 {
+  visibility: hidden;
+}

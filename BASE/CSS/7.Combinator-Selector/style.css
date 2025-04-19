@@ -1,0 +1,45 @@
+/* * Selector (Chọn tất cả element) */
+* {
+  font-family: monospace;
+  color: brown;
+}
+
+/* Element.Class (Chọn tất cả thẻ ul có class là list1) */
+ul.list1 {
+  list-style: none;
+}
+
+/* Element,Element (Chọn tất cả thẻ h1,h2) */
+h1,
+h2 {
+  color: blue;
+}
+
+/* .Class1.Class2 (Chọn tất cả thẻ đồng thời có class là tieu-de và tieu-de-3 */
+.tieu-de.tieu-de-3 {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+}
+
+/* Space Selector (Chọn tất cả thẻ p nằm trong thẻ div) */
+div p {
+  color: orange;
+}
+
+/* > Selector (Chọn tất cả thẻ p là con trực tiếp của class con-truc-tiep */
+.con-truc-tiep > p {
+  color: green;
+}
+
+/* + Selector (Chọn phần tử p đầu tiên đứng ngay sau phần tử h4*/
+h4 + p {
+  color: violet;
+  font-size: 40px;
+}
+
+/* ~ Selector (Chọn tất cả thẻ a nằm sau thẻ h5) */
+h5 ~ a {
+  font-size: 40px;
+  color: seagreen;
+  text-decoration: none;
+}

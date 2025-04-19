@@ -1,0 +1,54 @@
+/* [attribute] (Chọn tất cả các thuộc tính (property): href) */
+/* [href] {
+  color: crimson;
+} */
+
+/* a[href] {
+  color: blue;
+} */
+
+/* [attribute=value] (Chọn tất cả thuộc tính có chính xác giá trị: target="_blank" */
+/* [target="_blank"] {
+  color: green;
+  font-size: 50px;
+} */
+
+/* [attribute~=value] (Chọn tất cả các thuộc tính: title có chứa từ pic trong giá trị)
+=> Chỉ tác dụng với từ đứng riêng, không dính liền.
+*/
+[title~="pic"] {
+  color: pink;
+}
+
+a[title~="pic"][title~="so"] {
+  color: red;
+}
+
+/* [attribute*=value] (Chọn tất cả các thuộc tính:title có chứa chuỗi hay trong giá trị)
+=> Ví dụ: hay, hayiiii, abc hay,...
+*/
+[title*="hay"] {
+  color: orange;
+}
+
+/* [attribute|=value] (Chọn tất cả các thuộc tính:
+title có từ duy nhất bắt đầu bằng từ ca: ca, ca-124,...)
+*/
+[title|="ca"] {
+  color: cyan;
+}
+
+/* [attribute^=value] (Chọn tất cả các thuộc tính:
+title bắt đầu bằng từ dai(không quan tâm space đằng sau))
+*/
+[title^="dai"] {
+  color: yellowgreen;
+}
+
+/* [attribute$=value] (Chọn tất cả các thuộc tính: 
+title kết thúc bằng ký tự 1 (không quan tâm space đằng trước))
+*/
+[title$="1"] {
+  color: darkred;
+  font-size: 30px;
+}

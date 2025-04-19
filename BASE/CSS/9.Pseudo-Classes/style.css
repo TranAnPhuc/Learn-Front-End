@@ -1,0 +1,33 @@
+/* :hover (Chọn các class hover khi di chuột qua) */
+.hover:hover {
+  background-color: #e23232;
+}
+
+/* :active (Chọn các class active khi nhấn giữ chuột */
+.active:active {
+  color: red;
+}
+
+/* :link (Chọn các class link có liên kết chưa click vào */
+.link:link {
+  color: burlywood;
+}
+
+/* :visited (Chọn các class visited có liên kết đã click vào */
+.visited:visited {
+  color: rgb(201, 227, 50);
+}
+
+/* :empty (Chọn các class empty không có nội dung */
+.empty:empty {
+  width: 20px;
+  height: 20px;
+  background-color: #ff0505;
+}
+
+/* :target (Được sử dụng để chọn một phần tử khi nó được nhắm mục tiêu bởi một liên kết có chứa một hash (#) tương ứng với id của phần tử đó. 
+Điều này thường được sử dụng trong các liên kết nội bộ trên trang web.)
+*/
+h2:target {
+  background-color: #a9da8c;
+}

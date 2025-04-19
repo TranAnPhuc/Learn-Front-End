@@ -1,0 +1,23 @@
+h1 {
+  /* màu chữ */
+  color: red;
+  /* cỡ chữ */
+  font-size: 20px;
+  /* kiểu chữ */
+  font-family: Arial, sans-serif;
+  /* độ đậm của chữ */
+  font-weight: bold;
+  /* kiểu chữ */
+  font-style: italic;
+  /* gạch chân chữ */
+  text-decoration: underline;
+  /* viết hoa, thường */
+  text-transform: lowercase;
+  /* căn lề chữ */
+  text-align: center;
+}
+
+p {
+  /* khoảng cách giữa các dòng */
+  line-height: 25px;
+}

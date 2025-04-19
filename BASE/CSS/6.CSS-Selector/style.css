@@ -1,0 +1,23 @@
+/* Selector Element */
+p {
+  color: red;
+  font-size: 20px;
+}
+
+/* ID Selector 
+=> ID là duy nhất trong trang web, không được trùng lặp với bất kỳ ID nào khác.
+=> ID được sử dụng để định danh một phần tử duy nhất trong trang web.
+=> ID không được bắt đầu số, nếu có 2 ký tự trở lên nên đặt - hoặc _ để nối
+*/
+#tieu-de {
+  color: blue;
+}
+
+/* Class Selector 
+=> Class có thể được sử dụng nhiều lần trong trang web.
+=> Class được sử dụng để định danh một nhóm phần tử trong trang web.  
+=> Class không được bắt đầu số, nếu có 2 ký tự trở lên nên đặt - hoặc _ để nối  
+*/
+.doan-van {
+  color: green;
+}
