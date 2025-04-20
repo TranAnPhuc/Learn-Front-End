@@ -1,0 +1,25 @@
+.rgb {
+  color: rgb(184, 184, 60);
+}
+
+.rgba {
+  color: rgba(105, 208, 40, 0.641);
+}
+
+.hex {
+  color: #e60f0f;
+  /* Khi giá trị có 2 ký tự giống nhau thì có thể viết như này */
+  color: #f0f;
+}
+
+.color-name {
+  color: red;
+}
+
+.currentColor {
+  color: aqua;
+  /* color là thuộc tính có tính kế thừa
+nếu thẻ con không có thì sẽ kế thừa từ thẻ cha
+  */
+  border: 2px solid currentColor;
+}

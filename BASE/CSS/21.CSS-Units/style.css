@@ -1,0 +1,39 @@
+p {
+  /* px (pixels) */
+  font-size: 20px;
+}
+
+p.phan-tram {
+  /* % (Kích thước bằng n% so với thẻ cha) 
+  => Lưu ý: Nếu thẻ cha không có kích thước thì sẽ 
+lấy kích thước mặc định của trình duyệt, ví dụ: font-size của 
+trình duyệt mặc định là 16px
+  */
+  font-size: 50%;
+}
+
+p.vw-vh {
+  /* vw (100% chiều rộng khung nhìn (viewport - phần hiển thị trên browser)) */
+  width: 100vw;
+  /* vh (100% chiều cao khung nhìn (viewport - phần hiển thị trên browser)) */
+  height: 100vh;
+  background-color: #fe0f0f;
+}
+
+p.em {
+  /* em (Kích thước gấp 2 lần font chữ hiện tại (có kế thừa)) 
+  => TH1: Thẻ cha và thẻ con không có font-size -> lấy kích thước
+từ font-size của root (html)
+  => TH2: Thẻ cha có font-size tuyệt đối -> VD: .parent có font-size là 20px
+thì .child thừa hưởng font-size từ thẻ cha
+  => TH3: Cả thẻ cha và con đều đặt font-size -> ưu tiên font-size hiện tại của chính nó
+  => TH4: Thẻ cha có font-size tương đối -> Thẻ cha sẽ lấy kích thước
+mặc định từ trình duyệt(thẻ html gốc 16px). Sau đó thẻ con tiếp tục kế thừa từ thẻ cha
+  */
+  font-size: 2em;
+}
+
+p.rem {
+  /* rem (Kích thước gấp 3 lần font chữ root element(không kế thừa) */
+  font-size: 3rem;
+}

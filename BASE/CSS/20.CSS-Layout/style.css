@@ -1,0 +1,26 @@
+h1 {
+  /* Block element (Các thẻ ở trạng thái mặc định luôn chiếm 100% chiều rộng của thẻ cha
+  bất kể nội dung dài hay ngắn: vd: div,p,h1,h2,ul,ol,... */
+  display: block;
+}
+
+a {
+  /* Inline element (Hộp có kích thước phụ thuộc vào nội dung bên trong nó) */
+  display: inline;
+}
+
+/* Chú ý: 1 số thuộc tính CSS không áp dụng với inline element 
+        1.padding-top và padding-bottom
+        2.margin-top và margin-bottom
+        3.width, height, min-width, min-height
+*/
+.inline {
+  padding: 50px;
+  background-color: #0a5344;
+}
+
+.inline-block {
+  /* Inline-Block (là sự kết hợp giữa khối inline và block) */
+  display: inline-block;
+  padding: 40px;
+}

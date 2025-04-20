@@ -7,3 +7,13 @@ h1:not(p) {
 p:not(:nth-of-type(odd)) {
   color: rgb(38, 255, 0);
 }
+
+/* Mức độ ưu tiên (Mạnh -> Yếu) áp dụng khi có nhiều thuộc tính
+chồng chéo nhau cùng tác động lên một phần tử:
+1. !important   
+2. Inline style (style="")
+3. ID selector (#id)
+4. Class selector (.class) hoặc pseudo-class (:hover, :nth-child, ...)
+5. Element selector (div, h1, p, ...) 
+6. Universal selector (*) : Bộ chọn chung
+*/

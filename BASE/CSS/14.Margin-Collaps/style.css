@@ -1,0 +1,60 @@
+/* Margin Collapse (Là hiện tượng chồng lặp thuộc tính margin khi 2 phần tử liền kề 
+cùng thiết lập margin với phần tử còn lại theo chiều dọc) 
+=> Lưu ý: nếu theo chiều ngang sẽ không bị margin collapse 
+*/
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #ff3838;
+}
+
+.box1 {
+  margin-bottom: 20px;
+}
+
+.box2 {
+  margin-top: 50px;
+}
+
+.item {
+  background-color: #839c03;
+  border: 1px solid black;
+}
+
+.item1 {
+  margin-right: 20px;
+}
+
+.item2 {
+  margin-left: 60px;
+}
+
+/* Khắc phục margin collapse
+    1. Cách đơn giản: chỉ dàn trang theo 1 chiều nhất quán, từ trên xuống dưới hoặc từ dưới lên trên
+    2. Trong trường hợp bắt buộc dùng thì có thể dùng cách sau để xử lý margin collapse 
+*/
+/* body {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* TH2: Xảy ra với phần tử có quan hệ cha con
+=> Khi set margin cùng chiều cho thẻ cha và thẻ con.
+Thì sẽ bị collapse(kết hợp). Kích thước nào lớn hơn thì quết định
+*/
+
+.box-parent {
+  background-color: #fe12da;
+  height: 250px;
+  margin-top: 120px;
+  /* Khắc phục */
+  display: flex;
+  flex-direction: column;
+}
+
+.box-child {
+  background-color: blue;
+  width: 50%;
+  margin-top: 70px;
+}

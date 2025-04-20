@@ -1,0 +1,82 @@
+.padding {
+  width: 100px;
+  height: 100px;
+  background-color: #87ed21;
+  /* padding (Khoảng giữa các phần tử) */
+  padding: 20px;
+  /* Viết tường mình */
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  /* 10px là trên dưới và 20px là trái phải */
+  padding: 10px 20px;
+  /* 10px trên, 20px là trái phải và 30px là bên dưới */
+  padding: 10px 20px 30px;
+  /* 10px là trên, 20px là phải, 30px là dưới, 40px là trái */
+  padding: 10px 20px 30px 40px;
+}
+
+.border {
+  width: 100px;
+  height: 100px;
+  background-color: #0026ff;
+  /* border (viền) */
+  /* solid (nét liền) */
+  /* border: 3px solid red; */
+  /* dashed (nét đứt) */
+  /* border: 3px dashed red; */
+  /* dotted (nét chấm) */
+  /* border: 3px dotted red; */
+  /* double (nét đôi) */
+  /* border: 3px double red; */
+  /* groove (viền lõm) */
+  /* border: 3px groove red; */
+  /* ridge (viền nổi) */
+  /* border: 3px ridge red; */
+  /* inset (viền lõm) */
+  /* border: 3px inset red; */
+  /* outset (viền nổi) */
+  /* border: 3px outset red; */
+  /* none (không có viền) */
+  /* border: 3px none red; */
+  /* hidden (ẩn viền) */
+  /* border: 3px hidden red; */
+  /* Viết tường minh */
+  /* border-top: 3px solid red; */
+  /* border-right: 3px dashed red; */
+  /* border-bottom: 3px double red; */
+  /* border-left: 3px dotted red; */
+  /* border-width: 10px 20px 30px 40px; */
+  /* border-style: solid dashed double dotted; */
+  /* border-color: red blue green yellow; */
+  /* border-radius (bo góc) */
+  border-radius: 50px;
+  /* 50px trên trái dưới phải và 20px trên phải dưới trái */
+  border-radius: 50px 20px;
+  /* 50px trên trái, 20px trên phải dưới trái và 30px dưới phải */
+  border-radius: 50px 20px 30px;
+  /* 50px trên trái, 20px trên phải, 30px dưới trái và 40px dưới phải */
+  border-radius: 50px 20px 30px 40px;
+  /* Viết tường minh */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 40px;
+}
+
+.margin {
+  width: 100px;
+  height: 100px;
+  background-color: #11e631;
+  /* margin (khoảng cách giữa các phần tử) */
+  margin: 20px;
+  margin: 10px 20px;
+  margin: 10px 20px 30px;
+  margin: 10px 20px 30px 40px;
+  /* Viết tường minh */
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}

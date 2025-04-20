@@ -1,0 +1,15 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #f12727;
+  padding: 20px;
+  border: 20px solid black;
+  box-sizing: content-box;
+}
+
+.box2 {
+  /* box-sizing (Dùng để xác định cách tính kích thước phần tử(width và height)
+  => Cụ thể hơn là nó bao gồm hay không bao gồm padding và border trong kích thước đó)
+  */
+  box-sizing: border-box;
+}
