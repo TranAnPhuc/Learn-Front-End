@@ -1,0 +1,9 @@
+.pointer-events {
+  width: 200px;
+  height: 200px;
+  /* pointer-events (sự kiện chuột) trong CSS
+  được sử dụng để kiểm soát hoạt động của chuột
+  trên các phần tử HTML */
+  /* none (khiến phần tử không nhận được bất kỳ sự kiện con trỏ nào) */
+  pointer-events: none;
+}

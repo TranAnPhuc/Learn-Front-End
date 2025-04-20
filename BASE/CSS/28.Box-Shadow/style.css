@@ -1,0 +1,19 @@
+.box-shadow {
+  margin: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: #e5baba;
+  /* box-shadow (hiệu ứng đổ bóng). Gồm các đối số: 
+  =>Đối số thứ nhất: trục x;
+  =>Đối số thứ hai: trục y;
+  =>Đối số thứ ba: độ nhòe
+  =>Đối số thứ tư: bán kính lan rộng
+  =>Đối số thứ năm: màu của bóng đổ
+  */
+  box-shadow: 0px 2px 10px 5px rgb(188, 215, 36);
+  /* Dùng thêm inset để chèn vào bên trong đối tượng */
+  box-shadow: inset 0px 1px 10px 2px blue;
+  /* đổ nhiều bóng */
+  box-shadow: 220px 0px red, 220px 220px blue, 0px 220px green;
+  border-radius: 50%;
+}

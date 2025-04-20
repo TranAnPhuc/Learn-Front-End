@@ -1,0 +1,38 @@
+.clip-path {
+  width: 200px;
+  height: 500px;
+  background-image: url(../26.Background/soicodoc.jpg);
+  /* clip-path
+  =>Tạo 1 vùng cắt, nội dung trong vùng cắt sẽ được hiển thị.
+  =>Nội dung ngoài vùng cắt sẽ bị ẩn đi
+    Có 3 giá trị truyền vào:
+        1.circle() (cắt hình tròn)
+        2.inset() (cắt bình chữ nhật)
+        3.polygon() (cắt hình đa giác)
+  */
+  /* clip-path: circle(20px); */
+  /* clip-path: circle(50%); */
+  /* Tính toán bán kính của hình tròn:
+  radius = (50% * max(width, height))
+  Xác định giá trị của max(width, height)
+  từ kích thước đã cho. Trong trường hợp này,
+  box có width: 200px và height: 500px,
+  vì vậy max(width, height) 500px.
+  Tiến hành tính toán bán kính của hình tròn:
+  radius = (50% * 500px) = 250px
+  Vậy, trong trường hợp này,
+  giá trị 50% tương ứng với 250px.
+   */
+  /* thêm keyword at để xác định vị trí cắt */
+  /* clip-path: circle(40% at 50% 50%); */
+  /* có thể cắt ở nhiều hướng giống padding và margin */
+  clip-path: inset(20px);
+  clip-path: inset(20px 30px);
+  clip-path: inset(20px 40px 10px);
+  clip-path: inset(20px 50px 10px 30px);
+  /* thêm keyword round để bo góc */
+  clip-path: inset(20px round 10px 20px);
+  /* các cặp polygon được cách bởi dấu , và cũng có thể bo góc*/
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  border-radius: 10px;
+}
