@@ -1,0 +1,65 @@
+body {
+  background-color: #f14b4b;
+}
+
+.background-color {
+  width: 200;
+  height: 200px;
+  color: yellow;
+  /* transparent (mặc định - màu trong suốt) */
+  background-color: transparent;
+  /* color name */
+  background-color: red;
+  /* kênh rgb */
+  background-color: rgb(152, 188, 45);
+  /* hex */
+  background-color: #1dbe7b;
+  background-color: currentColor;
+}
+
+.background-image {
+  height: 100vh;
+  /* mặc định hình ảnh lặp vô hạn, chiếm kích thước của thẻ chứa nó */
+  background-image: url(./soicodoc.jpg);
+  /* none (bỏ hiển thị hình nền) */
+  /* background-image: none; */
+  /* background không lặp lại */
+  background-repeat: no-repeat;
+  /* background lặp lại trục x */
+  background-repeat: repeat-x;
+  /* background lặp lại trục y */
+  background-repeat: repeat-y;
+  /* background lặp lại (mặc định) */
+  background-repeat: repeat;
+  /* Sử dụng kết hợp nhiều ảnh nền
+  =>Ảnh nào xếp trước sẽ nằm trên
+  */
+  background-image: url(./palm-tree-leaf-free-png.webp), url(./soicodoc.jpg);
+}
+
+.background-size {
+  width: 400px;
+  height: 400px;
+  background-image: url(./soicodoc.jpg);
+  /* background-size (điều chỉnh kích thước ảnh nền). Các giá trị:display: 
+  1.contain
+  =>Ảnh vừa khung hình
+  =>Giữ nguyên tỉ lệ ảnh
+  =>Không bị mất ảnh
+  =>Nếu còn khoảng trống, ảnh sẽ bị lặp lại
+  2.cover
+  =>Ảnh vừa khớp khung hình
+  =>Giữ nguyên tỉ lệ ảnh(không bị méo)
+  =>Có thể mất 1 phần ảnh
+  =>Không bị lặp ảnh
+  3.Đơn vị
+  =>Khi truyền 1 đối số là chiều rộng
+  =>Khi truyền 2 đối số (đối số thứ 1 width, đối số thứ 2 height)
+  */
+  background-size: contain;
+  background-size: cover;
+  background-size: 100%;
+  background-size: 100% 100%;
+  background-size: 200px;
+  background-size: 200px 400px;
+}

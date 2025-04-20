@@ -21,3 +21,171 @@
   background-color: #ff0000;
   line-height: 130px;
 }
+
+.letter-spacing {
+  /* letter-spacing: tăng giảm khoảng cách giữa các ký tự */
+  letter-spacing: 10px;
+}
+
+.word-spacing {
+  /* word-spacing: tăng giảm khoảng cách giữa các từ */
+  word-spacing: 100px;
+}
+
+.text-align {
+  /* text-align (căn text) có 4 giá trị phổ biến: 
+  1.justify (căn dàn đều hai bên)
+  2.left (căn trái - mặc định)
+  3.right (căn phải)
+  4.center (căn giữa)
+  *Lưu ý: Nó chỉ căn text so với box chứa nó.
+  */
+  text-align: justify;
+  text-align: left;
+  text-align: right;
+  text-align: center;
+}
+
+.text-decoration {
+  /* text-decoration (trang trí văn bản) có 4 giá trị phổ biến: 
+  1.none (bỏ gạch chân)
+  2.underline (thêm gạch chân)
+  3.line-through (thêm gạch ngang)
+  4.overline (gạch trên đầu
+  */
+  text-decoration: none;
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: overline;
+  /* 
+  =>Có thể định kiểu của dấu gạch, màu sắc, kích thước
+  */
+  text-decoration: underline dashed red 5px;
+}
+
+.text-indent {
+  /* text-indent (thụt lề) có thể truyền số âm */
+  text-indent: -40px;
+  text-indent: 40px;
+}
+
+.text-transform {
+  /* text-transform (chuyển đổi văn bản) có 3 giá trị phổ biến: 
+  1.capitalize (Viết hoa chữ cái đầu)
+  2.lowercase (Viết thường toàn bộ text)
+  3.uppercase (Viết hoa toàn bộ text)
+  */
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+}
+
+.white-space {
+  /* white-space (Quy định về khoảng trắng khi code). Các giá trị truyền vào: 
+  1.normal (trạng thái mặc định)
+  2.nowrap (không xuống dòng kể cả chạm tới lề)
+  3.pre (giữ nguyên định dạng code, giống thẻ pre)
+  4.pre-line (giữ nguyên định dạng theo line(enter)
+  =>Tất cả dấu khoảng trắng thừa mỗi dòng trong nội dung văn bản sẽ bị loại bỏ
+  =>Dòng mới (xuống dòng) được giữ nguyên 
+  5.pre-wrap (giữ nguyên định dạng code)
+  =>Tất cả dấu cách thừa ở trong nội dung văn bản sẽ được giữ nguyên
+  =>Dòng mới (xuống dòng) được giữ nguyên
+  */
+  white-space: normal;
+  white-space: nowrap;
+  white-space: pre;
+  white-space: pre-line;
+}
+
+.word-break {
+  /* Khi đoạn text hoặc link dài, người dùng nhập liền nhau thì có thể gây vỡ giao diện
+  vì text không bị xuống dòng
+  =>có thể dùng thuộc tính word-break: break-all để bẻ xuống hàng
+  */
+  word-break: break-all;
+}
+
+.text-shadow {
+  /* text-shadow (bóng đổ text). Truyền vào 4 tham số
+  =>Tham số thứ nhất: trục nằm ngang
+  =>Tham số thứ hai: trục nằm dọc
+  =>Tham số thứ ba: blur(độ nhòe)
+  =>Tham số thứ tư: color
+  */
+  text-shadow: 2px 2px 5px red;
+}
+
+.overflow {
+  width: 300px;
+  height: 300px;
+  background-color: #b10101;
+  /* visible (thuộc tính mặc đinh) */
+  overflow: visible;
+  /* khi nội dung tràn ra khỏi box chứa thì dùng overflow: hidden
+  để ẩn nội dung thừa
+  */
+  overflow: hidden;
+  /* scroll (luôn hiển thị vùng thanh cuốn)  */
+  overflow: scroll;
+  /* auto có 2 trường hợp: 
+  1.Nếu nội dung ngắn => không có scroll bar
+  2.Nếu nội dung vượt box chứa => tự động sinh ra scroll
+  */
+  overflow: auto;
+}
+
+.overscroll-behavior {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  overflow: auto;
+  /*  Là một thuộc tính CSS được sử dụng để điều chỉnh cách trình duyệt
+  xử lý sự kiện "overscrolling", tức là khi người dùng cuộn trang
+  đến khi không còn nội dung để cuộn nữa
+  */
+  overscroll-behavior: auto;
+  overscroll-behavior: contain;
+}
+
+/* tùy biến cho thanh scrollbar đẹp mắt hơn */
+/* width */
+.overscroll-behavior::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+.overscroll-behavior::-webkit-scrollbar-track {
+  background: #aad01f;
+}
+
+/* Handle */
+.overscroll-behavior::-webkit-scrollbar-thumb {
+  background: #ff0404;
+}
+
+/* Handle on hover */
+.overscroll-behavior::-webkit-scrollbar-thumb:hover {
+  background: #70f007;
+}
+
+.text-overflow {
+  width: 100px;
+  white-space: nowrap;
+  background-color: #e20e0e;
+  overflow: hidden;
+  /* Thuộc tính CSS text-overflow dùng để xử lý cách hiển thị văn bản bị tràn ra ngoài phần tử chứa nó. Nó thường đi kèm với 
+  white-space: nowrap và overflow: hidden để hoạt động đúng. 
+  */
+  /* ellipsis (tạo dấu 3 chấm) */
+  text-overflow: ellipsis;
+}
+
+/* làm dấu ... ở dòng thứ 2,3,... */
+.text-overflow-2 {
+  background-color: #97c730;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
