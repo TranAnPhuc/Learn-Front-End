@@ -1,0 +1,113 @@
+/* Thuộc tính position cho phép điều chỉnh vị trí các phần tử trên trang web */
+.content {
+  position: relative;
+  background-color: #ff6e6e;
+  margin: 100px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* căn giữa text ở các khối*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: blue;
+  /* static (giá trị mặc định các phần tử có vị trí cố định) */
+  /* position: static; */
+  /* relative (định vị so với vị trí ban đầu của nó 1 khoảng x: 
+  =>left(cách lề trái ban đầu 1 khoảng x)
+  =>right(cách lề phải ban đầu 1 khoảng x)
+  =>top(cách lề trên ban đầu 1 khoảng x)
+  =>bottom(cách lề dưới ban đầu 1 khoảng x)
+  Tuy nhiên, không có bất kỳ không gian mới nào được tạo ra để chứa phần tử
+  được định vị theo kiểu này, vì vậy các phần tử khác trong trang web
+  vẫn có thể bị che khuất bởi phần tử được định vị theo kiểu relative
+  */
+  /* position: relative; */
+  /* bottom: 100px; */
+  /* left: 100px; */
+  /* absolute (phần tử được đưa ra khỏi luồng ban đầu)
+  1.Nếu không có tổ tiên có position: relative thì phần tử được định vị theo top left corner webpage
+  2.Phần tử được định vị theo tổ tiên gần nhất đặt position là relative
+  */
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.box3 {
+  background-color: green;
+}
+
+.icon-fixed a {
+  color: crimson;
+  font-size: 40px;
+  /* fixed (fix cứng phần tử theo viewport - vùng hiển thị nội dung
+  trên màn hình của trình duyệt web)
+  */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.z-index {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* z-index (Dùng xác định xem phần nào nằm cao hơn phần tử nào - 
+phần tử thấp hơn có thể bị che khuất)
+=>Khi các phần tử có cùng kiểu vị trí (position) được định nghĩa là relative, absolute hoặc fixed.
+=>Các phần tử static không bị ảnh hưởng bởi z-index
+*/
+.z-index {
+  position: relative;
+}
+
+.z-index-1 {
+  z-index: 1;
+  position: absolute;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.z-index-2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(30, 255, 0);
+}
+
+.z-index-3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(9, 62, 255);
+}
+
+.courses {
+  margin-left: 600px;
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+  background-color: #f89999;
+}
+
+h2 {
+  background-color: #a6dc3a;
+  /* sticky (định vị phần tử dính lại theo thẻ cha gần nhất có thanh cuộn scrollbar */
+  position: sticky;
+  top: 0;
+}

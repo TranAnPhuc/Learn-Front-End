@@ -1,0 +1,42 @@
+/* Khi 1 giá trị css dùng đi dùng lại nhiều lần, ta có thể gán biến cho nó dễ tái sử dụng */
+/* 1.Khai báo root hoặc html sẽ áp dụng cho toàn trang 
+   2.Khai báo trong phần tử nào thì sẽ áp dụng 
+   được cho phần tử đó và các cấp thấp hơn(con của nó).
+   3.Có thể bị ghi đè theo thứ tự ưu tiên
+   4.Giá trị backup của biến
+*/
+:root {
+  /* --tên_biến */
+  --box-height: 100px;
+  --box-background-color: green;
+  --box-margin-top: 20px;
+  --box-color: red;
+}
+
+.box-1 {
+  /* var(tên_biến) */
+  height: var(--box-height);
+  background-color: var(--box-background-color);
+  margin-top: var(--box-margin-top);
+  color: var(--box-color);
+}
+
+.box-2 {
+  height: var(--box-height);
+  /* backup */
+  background-color: var(--box-background-color, red);
+  margin-top: var(--box-margin-top);
+  color: var(--box-color);
+}
+
+.box-2 {
+  /* bị ghi đè */
+  height: 200px;
+}
+
+.box-3 {
+  height: var(--box-height);
+  background-color: var(--box-background-color);
+  margin-top: var(--box-margin-top);
+  color: var(--box-color);
+}

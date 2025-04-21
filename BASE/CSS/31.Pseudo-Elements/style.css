@@ -1,0 +1,35 @@
+/* ::first-line (Chọn dòng đầu tiên các class first-line)
+=>Không tác dụng được với display:inline
+*/
+.first-line::first-line {
+  color: red;
+}
+
+/* ::first-letter (Chọn chữ cái đầu tiên các class first-letter) */
+.first-letter::first-letter {
+  font-size: 20px;
+  color: rgb(236, 204, 21);
+}
+
+/* ::selection (Chọn phần tử vùng đang được bôi đen các class selection) */
+.selection::selection {
+  background: blueviolet;
+}
+
+/* ::marker (Chọn các điểm đánh dấu của các phần tử li) */
+li::marker {
+  color: aqua;
+}
+
+/* ::before (Thêm phần tử vào trước class before) */
+.before::before {
+  display: inline-block;
+  content: "chào";
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.after::after {
+  content: "tạm biệt";
+}

@@ -1,0 +1,12 @@
+img {
+  max-width: 70%;
+  /* mẹo căn giữa */
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e44a4aa3;
+}

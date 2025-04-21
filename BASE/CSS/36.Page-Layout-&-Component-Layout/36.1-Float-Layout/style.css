@@ -1,0 +1,25 @@
+img {
+  /* ở trạng thái mặc định, các phần tử:
+  1.inline: nằm trên cùng hàng
+  2.block: sẽ chiếm hết chiều ngang
+  =>Các phần tử này sẽ sắp xếp theo chiều dọc từ trên xuống dưới
+  */
+  /* với giá trị là left ảnh sẽ trôi qua trái */
+  float: left;
+  /* với giá trị là right ảnh sẽ trôi qua phải */
+  float: right;
+}
+
+img.img2 {
+  float: left;
+}
+
+p.desc {
+  /* clear (Giúp phần tử đang bị chèn ép bao hình không bị chèn ép nữa). Có 3 giá trị: 
+  1.left (clear giá trị float bên trái)
+  2.right (clear giá trị float bên phải)
+  3.both (clear cả 2 hướng)
+  */
+  /* clear: left; */
+  clear: both;
+}

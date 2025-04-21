@@ -1,0 +1,25 @@
+.box {
+  /* tạo 1 biến đếm, reset nó = 0 */
+  counter-reset: section;
+  padding-left: 40px;
+  background: aqua;
+}
+
+h2 {
+  /* tăng biến đếm lên 1 khi gặp thẻ h2 */
+  counter-increment: section;
+  /* tạo biến đếm và reset thẻ h3 về 0 khi gặp thẻ h2 */
+  counter-reset: sub-section;
+}
+
+h2::before {
+  content: "Phần " counter(section) ": ";
+}
+
+h3 {
+  counter-increment: sub-section;
+}
+
+h3::before {
+  content: "Phần " counter(section) "." counter(sub-section) ": ";
+}

@@ -1,0 +1,25 @@
+/* Hàm calc() 
+=>Là một trong CSS cho phép thực hiện các phép tính đơn giản như +,-,*,/
+=>Có thể sử dụng với tất cả các thuộc tính CSS về kích thước như width, height, margin,padding,top,left,background-position,...
+*/
+.nav {
+  height: 100px;
+  background-color: #f5f;
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.main-content {
+  background-color: #8e8e8e;
+  /* không sử dụng 100% trong tình huống này */
+  height: calc(100vh - 100px);
+}
+/* Chú ý:
+1.Sau calc không được có khoảng trắng
+2.Khi dùng với toán tử +,- thì bắt buộc phải có khoảng trắng trước và sau toán tử +,-
+3.Toán tử *,/: 
+=>Toán tử *: Viết đơn vị trước hay sao đều được
+=>Toán tử /:
+1.Phần có đơn vị bắt buộc viết trước
+2.Không chia cho 0
+*/
