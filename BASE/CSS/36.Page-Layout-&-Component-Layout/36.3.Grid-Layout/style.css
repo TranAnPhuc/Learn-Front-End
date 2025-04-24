@@ -1,0 +1,164 @@
+.box-part1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1-part1,
+.box-4-part1,
+.box-5-part1 {
+  background: rgba(94, 226, 58, 0.312);
+}
+
+.box-2-part1,
+.box-3-part1 {
+  background: #3170dd76;
+}
+
+.container-part1 {
+  display: grid;
+  /* display: inline-grid; */
+  /* Mặc định thì nó có 1 cột và 1 hàng */
+  /* 3.Chia hàng và cột trong grid */
+  /* Giá trị mặc định của hàng và cột trong grid */
+  /* grid-template-columns: auto;
+  grid-template-rows: auto; */
+  /* Đơn vị có thể dùng: tuyệt đối px, tương đối(em,rem,%) hoặc dùng hàm calc để tính toán */
+  /* grid-template-columns: 100px calc(100% - 100px); */
+  /* grid-template-rows: 50px 100px 50px; */
+  /* 4.Gap */
+  /* Quy định gap dòng */
+  /* grid-row-gap: 10px; */
+  /* Quy định gap cột */
+  /* grid-column-gap: 20px; */
+  /* Viết gọn: gap: row-gap column-gap (Khi nhập 1 đối số
+  sẽ áp dụng cho row-gap và column-gap)
+  */
+  /* gap: 50px 10px; */
+  /* gap: 50px; */
+  /* 5.Trong trường hợp có nhiều giá trị lặp lại thì dùng repeat */
+  /* grid-template-columns: 100px repeat(2, 50px); */
+  /* grid-template-rows: 50px repeat(3, 100px); */
+  /* 6.Chia theo trọng số (Chiếm bao nhiêu phần) của hàng và cột*/
+  /* grid-template-columns: 1fr 2fr; */
+  /* grid-template-rows: 1fr 3fr 6fr 3fr 1fr; */
+  /* 7.Sử dụng giá trị auto (Không áp dụng auto với rows) */
+  /* Khi dùng cho columns sẽ chiếm 100% không gian còn lại*/
+  /* grid-template-columns: 100px auto; */
+  /* Khi dùng cho rows nó chỉ chứa vừa nội dung mà nó chứa */
+  /* grid-template-rows: 50px auto; */
+  /* 8.Sử dụng giá trị minmax */
+  grid-template-columns: minmax(150px, 300px) minmax(200px, auto);
+  grid-template-rows: repeat(2, minmax(50px, 80px));
+  /* 9.grid-auto-rows: Chỉ định chiều cao dòng mặc định
+  => Tất cả những rows không được chỉ định rõ chiều cao sẽ tuân theo chiều cao
+  mặc định row này
+  */
+  grid-auto-rows: 50px;
+}
+
+.box-part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-1-part2,
+.box-4-part2,
+.box-5-part2 {
+  background: rgba(61, 29, 204, 0.312);
+}
+
+.box-2-part2,
+.box-3-part2 {
+  background: #f058cf76;
+}
+
+.container-part2 {
+  display: grid;
+  grid-template-columns: 100px repeat(2, 50px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 15px;
+}
+
+.box-1-part2 {
+  /* Định vị vị trí phần tử với giá trị dương */
+  /* grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4; */
+  /* Định vị vị trí phần tử với giá trị âm */
+  /* grid-row-start: 1;
+  grid-row-end: -2;
+  grid-column-start: 2;
+  grid-column-end: 4; */
+  /* Cú pháp viết tắt 1
+  =>grid-row là viết tắt của grid-row-start và grid-row-end.
+  =>grid-column là viết tắt của grid-column-start và grid-column-end.
+  =>Nếu một giá trị được cung cấp, nó sẽ chỉ định grid-row-start/grid-column-start.
+  =>trước sau / có thể có space hoặc không
+  */
+  /* grid-row: 1 / 3;
+  grid-column: 2 / 4; */
+  /* Cú pháp viết tắt 2: grid-area
+  =>grid-area là viết tắt của 
+  grid-row-start, grid-column-start, grid-row-end và grid-column-end. Nếu bốn giá trị được chỉ định
+  */
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.box-5-part2 {
+  /* span (mở rộng thêm bao nhiêu ô từ vị trí hiện tại) */
+  grid-column: span 2;
+}
+
+.box-part3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-1-part3,
+.box-4-part3,
+.box-5-part3 {
+  background: rgba(9, 192, 70, 0.312);
+}
+
+.box-2-part3,
+.box-3-part3 {
+  background: #11688a76;
+}
+
+.container-part3 {
+  display: grid;
+  gap: 5px;
+  /* Định vị phần tử theo tên cell */
+  /* Bước 1: Đặt tên cho các grid cell */
+  grid-template-areas:
+    "header header header"
+    "menu content sidebar"
+    "menu footer footer";
+}
+
+.box-1-part3 {
+  /* Bước 2: Đặt vị trí cho các phần tử theo grid cell name */
+  grid-area: header;
+}
+
+.box-2-part3 {
+  grid-area: menu;
+}
+
+.box-3-part3 {
+  grid-area: content;
+}
+
+.box-4-part3 {
+  grid-area: sidebar;
+}
+
+.box-5-part3 {
+  grid-area: footer;
+}

@@ -1,0 +1,135 @@
+.container-justify-content {
+  display: flex;
+  /* Theo mặc định, trục main axis sẽ nằm ngang, còn trục cross axis sẽ nằm dọc
+Justify-content sẽ căn các phần tử theo trục main axis */
+  /* flex-start (mặc định - các phần tử nằm ở main start */
+  justify-content: flex-start;
+  /* flex-end (các phần tử nằm ở main end */
+  justify-content: flex-end;
+  /* center (các phần tử nằm ở giữa theo trục main axis) */
+  justify-content: center;
+  /* space-between (các phần tử sát lè và khoảng cách giữa các phần tử
+  bằng nhau */
+  justify-content: space-between;
+  /* space-around (các phần tử cách lề và khoảng cách giữa các phần tử gấp đôi) */
+  justify-content: space-around;
+  /* space-evenly (các phần tử cách lề và khoảng cách giữa các phần tử bằng nhau */
+  justify-content: space-evenly;
+  background-color: #aca6a6;
+  width: 300px;
+  height: 300px;
+}
+
+.box-justify-content {
+  background-color: green;
+}
+
+.container-align-items {
+  display: flex;
+  background-color: #d73c3c;
+  width: 300px;
+  height: 300px;
+  /* align-items (stretch; - mặc định, kéo giãn các phần tử bằng container (theo trục cross)) */
+  align-items: stretch;
+  /* flex-start (các phần tử nằm ở cross start */
+  align-items: flex-start;
+  /* flex-end (các phần tử nằm ở cross end */
+  align-items: flex-end;
+  /* center (các phần tử nằm giữa theo trục cross axis) */
+  align-items: center;
+  /* baseline (Canh hàng các phần tử con theo đường cơ sở chữ viết) */
+  align-items: baseline;
+}
+
+.box-align-items {
+  background-color: green;
+}
+
+.box-align-items-1 {
+  height: 200px;
+  font-size: 50px;
+}
+
+.container-flex-wrap {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #e72828;
+  /* nowrap (Mặc định - khi width của phần tử con không đủ vẫn không xuống dòng) */
+  flex-wrap: nowrap;
+  /* wrap (Khi width của phần tử con không đủ sẽ xuống hàng */
+  flex-wrap: wrap;
+  /* wrap-reverse (khi width của phần tử con không đủ sẽ xuống hàng và
+  đảo ngược lại)
+  */
+  flex-wrap: wrap-reverse;
+}
+
+.box-flex-wrap {
+  width: 40%;
+  background-color: #c6f448;
+}
+
+.container-align-content {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #1adef0;
+  flex-wrap: wrap;
+  /* align-content (Sử dụng kèm với flex-wrap, dùng để căn nhiều hàng theo cross axis) */
+  /* stretch (Mặc định - các phần tử tự kéo giãn lắp đầy container) */
+  align-content: stretch;
+  /* flex-start (các phần tử nằm ở cross start) */
+  align-content: flex-start;
+  /* flex-end (các phần tử nằm ở cross end */
+  align-content: flex-end;
+  /* center (các phần tử nằm ở giữa của trục cross axis */
+  align-content: center;
+  /* space-between (các phần tử sát lề và khoảng cách giữa các phần tử bằng nhau) */
+  align-content: space-between;
+  /* space-around (các phần tử cách lề và khoảng cách giữa các phần tử gấp đôi) */
+  align-content: space-around;
+  /* space-evenly (các phần tử cách lề và khoảng cách giữa các phần tử bằng nhau) */
+  align-content: space-evenly;
+}
+
+.box-align-content {
+  background-color: #fff;
+  width: 40%;
+  height: 30px;
+}
+
+.container-flex-direction {
+  display: flex;
+  background-color: #e2bc32;
+  width: 300px;
+  height: 300px;
+  /* flex-direction (giúp thay đổi hướng của trục main axis cross axis không đổi)
+  Có 4 giá trị: 
+  1.row (trục main axis nằm ngang)
+  2.row-reverse (trục main axis nằm ngang nhưng bị đảo ngược)
+  3.column (trục main axis nằm dọc)
+  4.column (trục main axis nằm dọc nhưng bị đảo ngược)
+  */
+  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.box-flex-direction {
+  background-color: #28f05d;
+}
+
+.container-flex-flow {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  /* flex-flow (Cú pháp viết tắt của flex-wrap và flex-direction) */
+  flex-flow: wrap row-reverse;
+}
+
+.box-flex-flow {
+  background-color: blue;
+}

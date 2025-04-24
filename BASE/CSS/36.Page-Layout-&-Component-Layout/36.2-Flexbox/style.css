@@ -1,0 +1,16 @@
+.container-flex {
+  /* flex (các phần tử thoát khỏi luồng thông thường và chiếm hết
+  chiều rộng thẻ cha nó */
+  display: flex;
+  /* inline-flex (các phần tử thoát khỏi luồng thông thường và
+  chỉ chiếm vừa đủ nội dung của nó */
+  display: inline-flex;
+  background-color: blue;
+  /* gap (là 1 giá trị dùng cho flex hoặc grid nó giúp xác định
+  khoảng trống giữa các item) */
+  gap: 40px;
+}
+
+.box-flex {
+  background-color: red;
+}

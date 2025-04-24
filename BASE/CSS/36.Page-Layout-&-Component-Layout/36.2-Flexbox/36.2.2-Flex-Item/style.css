@@ -1,0 +1,169 @@
+.container-align-self {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  align-items: flex-start;
+  font-size: 40px;
+}
+
+.box-align-self {
+  background-color: #d7e544;
+}
+
+.box-align-self-1 {
+  font-size: 20px;
+  /* align-self (Dùng để canh chỉnh riêng lẻ theo trục cross axis)*/
+  align-self: stretch;
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+  align-self: baseline;
+}
+
+.container-flex-grow {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #f29a9a;
+}
+
+.box-flex-grow {
+  background-color: #33ce52a5;
+}
+
+.box-flex-grow-1 {
+  /* flex-grow (Chỉ tỉ lệ chiếm theo trọng số). Giá trị mặc định là 0*/
+  flex-grow: 1;
+}
+
+.box-flex-grow-2 {
+  flex-grow: 2;
+}
+
+.box-flex-grow-3 {
+  flex-grow: 2;
+}
+
+.container-flex-shrink {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #ff8181;
+}
+
+.box-flex-shrink {
+  background-color: #fdff;
+  width: 30%;
+}
+
+.box-flex-shrink-1 {
+  /* flex-shrink (Giúp can thiệp việc co lại của phần tử - mặc định giá trị là 1) */
+  /* Khi truyền giá trị 0 phần tử không bị co lại */
+  flex-shrink: 0;
+}
+
+.container-flex-basis {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #67ded4;
+  flex-direction: column;
+}
+
+.box-flex-basis {
+  width: 30%;
+  /* flex-basis (set main size item. 
+  Lưu ý main size theo trục main axis)
+  => Khi dùng flex-direction: column thì set chiều cao phần tử
+  */
+  flex-basis: 30%;
+  background-color: #dd5e5e;
+}
+
+.container-flex {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #ff7474;
+}
+
+.box-flex {
+  background-color: #b5cb39;
+  /* flex (Đây là cách viết tắt của 3 thuộc tính: 
+  1.flex-grow
+  2.flex-shrink
+  3.flex-basis
+  */
+  flex: 2 0 30%;
+  /* cú pháp viết tắt */
+  flex: 1;
+}
+
+/* Thứ tự ưu tiên của độ rộng (Thấp -> Cao): 
+1.content width
+2.width
+3.flex-basis
+4.min-width/max-width
+*Lưu ý:
+1.Nếu max-width < flex-basis -> max-width
+2.Nếu max-width > flex-basis -> flex-basis
+*/
+
+.container-order {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  background-color: #2f88f4;
+}
+
+.box-order {
+  background-color: #66e5ca;
+}
+
+.box-order-1 {
+  /* order (thay đổi thứ tự các item) */
+  order: 1;
+}
+
+.box-order-2 {
+  order: 2;
+}
+
+.container {
+  display: flex;
+  height: 150px;
+  background-color: red;
+}
+
+.box1 {
+  background-color: blue;
+}
+
+.box2 {
+  /* margin-left:auto (đẩy box 2 và các box sau nó qua phải) */
+  margin-left: auto;
+  background-color: rgb(65, 255, 32);
+}
+
+.box3 {
+  background-color: rgb(21, 193, 255);
+}
+
+.box4 {
+  background-color: rgb(255, 17, 120);
+}
+
+.container2 {
+  display: flex;
+  height: 100px;
+  background-color: cyan;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.fa-youtube {
+  margin: auto;
+  font-size: 1.5;
+  color: red;
+}
