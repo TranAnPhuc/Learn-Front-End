@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS BEM</title>
+  </head>
+  <body>
+    <!-- Đặt vấn đề ?
+    Đặt tên class CSS theo cách truyền thống, sẽ có những mặt hạn chế :
+    1. Xung đột CSS: Trong 1 dự án, đặc biệt là các dự án lớn, thì số lượng các khối, các phần tử lớn
+    => Số lượng các phần tử trên trang lớn
+    => Dễ bị trùng tên class, để đặt cho các phần tử
+    => CSS sử dụng cách thông thường => Có cấu trúc xếp tầng, nếu di chuyển khối code CSS đi vị trí khác => Có thể dẫn đến xung đột, ghi đè CSS do thứ tự ưu tiên
+    2. Khó bảo trì: 
+    => Khi CSS không được cấu trúc và đặt tên một cách logic, việc bảo trì trang web trở nên khó khăn. 
+    Bạn có thể mất nhiều thời gian tìm kiếm và chỉnh sửa các lớp CSS liên quan khi cần thay đổi giao diện.
+    -->
+
+    <!-- BEM là gì ?
+    BEM là viết tắt của Block, Element, Modifier Là một phương pháp đặt tên và quản lý class CSS
+
+    Block
+    Là các khối độc lập.
+    Ví dụ: Header, navigation, footer, menu,...
+
+    Element
+    Có thể coi element là phần tử con của block, element được gắn về mặt ngữ nghĩa với block của nó.
+    Ví dụ: title, description, image,...
+
+    Modifier
+    Là thành phần dùng để bổ nghĩa cho block, hoặc element.
+    Ví dụ: checked, disabled, small, red, signin, signUp...
+    -->
+
+    <!-- Cú pháp BEM:
+    1.block
+    .header, .footer, .card, .card-list,...
+    2.element
+    block__element: footer__logo, footer__desc, card__image
+    3.modifier
+        3.1.block__element--modifier: card__image--large, card__image--small
+        3.2.block--modifier: .modal-custom, .modal--fullscreen
+    -->
+    <!-- TH1 -->
+    <div class="card">
+      <div class="card__image"></div>
+      <div class="card__title"></div>
+      <div class="card__desc"></div>
+      <div class="card__button">
+        <div class="card__button--primary"></div>
+        <div class="card__button--secondary"></div>
+      </div>
+    </div>
+
+    <!-- TH2 -->
+    <div class="card-list">
+      <!-- item 1 -->
+      <div class="card-item">
+        <div class="card-item__image"></div>
+        <div class="card-item__title"></div>
+        <div class="card-item__desc"></div>
+        <div class="card-item__button">
+          <div class="card-item__button--primary"></div>
+          <div class="card-item__button--secondary"></div>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="card-item">
+        <div class="card-item__image"></div>
+        <div class="card-item__title"></div>
+        <div class="card-item__desc"></div>
+        <div class="card-item__button">
+          <div class="card-item__button--primary"></div>
+          <div class="card-item__button--secondary"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Lưu ý
+    BEM không có mục đích phản ánh cấu trúc lồng nhau của các block, các element
+        Giả sử: Một block chứa element 1,
+        element 1 chứa element 2,
+        element 2 chứa element 3
+    -->
+
+    <!-- Đặt tên class chưa đúng -->
+    <div class="block">
+      <div class="block__element1">
+        <div class="block__element1__element2">
+          <div class="block__element1__element2__element3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Đặt tên class đúng -->
+    <div class="block">
+      <div class="block__element1">
+        <div class="block__element2">
+          <div class="block__element3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

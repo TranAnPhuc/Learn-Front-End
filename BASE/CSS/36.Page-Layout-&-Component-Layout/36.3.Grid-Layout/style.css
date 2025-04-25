@@ -163,20 +163,140 @@
   grid-area: footer;
 }
 
-.box-part3 {
+.box-part4 {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
 
-.box-1-part3,
-.box-4-part3,
-.box-5-part3 {
+.box-1-part4,
+.box-4-part4,
+.box-5-part4 {
   background: rgba(9, 192, 70, 0.312);
 }
 
-.box-2-part3,
-.box-3-part3 {
+.box-2-part4,
+.box-3-part4 {
   background: #11688a76;
+}
+
+.container-part4 {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 50px 100px 200px;
+  /* align-items (Căn chỉnh nội dung bên trong phần tử con theo trục dọc (trục cột) */
+  /* mặc định là stretch */
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* justify-items (Căn chỉnh nội dung bên trong phần tử con theo trục ngang (trục hàng) */
+  /* mặc định là stretch */
+  justify-items: stretch;
+  justify-items: center;
+  justify-items: left;
+  justify-items: right;
+}
+
+.box-part5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-1-part5,
+.box-4-part5,
+.box-5-part5 {
+  background: rgba(9, 192, 70, 0.312);
+}
+
+.box-2-part5,
+.box-3-part5 {
+  background: #11688a76;
+}
+
+.container-part5 {
+  background-color: yellow;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 50px 100px 200px;
+  /* align-content (Căn các item trong khối container theo trục column) */
+  /* mặc định là start */
+  /* align-content: start;
+  align-content: end;
+  align-content: space-around;
+  align-content: space-between; */
+  /* justify-content (Căn các item trong khối container theo trục row */
+  /* mặc định là start */
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.box-part6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-1-part6,
+.box-4-part6,
+.box-5-part6 {
+  background: rgba(9, 192, 70, 0.312);
+}
+
+.box-2-part6,
+.box-3-part6 {
+  background: #11688a76;
+}
+
+.container-part6 {
+  display: grid;
+  gap: 2px;
+  /* grid-auto-flow (Chỉ định hướng của grid) */
+  /* Mặc định là row */
+  /* grid-auto-flow: row; */
+  /* grid-template-columns: repeat(5, 100px); */
+
+  /* Chuyển hướng sang cột */
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 100px);
+}
+
+.box-part7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-1-part7,
+.box-4-part7,
+.box-5-part7 {
+  background: rgba(9, 192, 70, 0.312);
+}
+
+.box-2-part7,
+.box-3-part7 {
+  background: #11688a76;
+}
+
+.container-part7 {
+  display: grid;
+  gap: 5px;
+  /* grid-template-columns: repeat(5, 1fr); */
+  /* . Grid auto-fill, auto-fit Dùng để 
+  xác định cách grid items (phần tử bên trong grid) được tự động 
+  xếp trong grid container khi không có đủ vị trí (được xác định trước) */
+  /* auto-fill (Khi màn hình đủ lớn, sẽ tự động sinh ra các grid cell trống) */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* auto-fit (Khi màn hình đủ lớn, sẽ tự động lắp đầy) */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
