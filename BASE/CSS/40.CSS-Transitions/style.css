@@ -1,0 +1,43 @@
+.btn {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(255, 0, 0);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: 5s;
+  /* transition-duration
+  (Xác định thời gian diễn ra hiệu ứng.) 
+  */
+  transition-duration: 5s;
+  /* transition-property  
+  (Xác định thuộc tính CSS nào sẽ được áp dụng hiệu ứng chuyển đổi) 
+  */
+  transition-property: background-color, color;
+  /* transition-delay 
+  (Thời gian trễ trước khi bắt đầu hiệu ứng.)
+  */
+  transition-delay: 0.5s;
+  /* transition-timing-function
+  (Xác định tốc độ của hiệu ứng theo thời gian (tức là diễn biến nhanh/chậm).)
+  */
+  transition-timing-function: ease-in-out;
+  /* transition shorthand
+  *Lưu ý: transition-duration trước transition-delay 
+  */
+  /* transition: all ease 2s 3s; */
+  transition: background-color ease 1s 2s, color ease 1s 2s;
+}
+
+.btn:hover {
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 255, 255, 0.795);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.288);
+}
+
+/* 
+        Một số lưu ý quan trọng
+1.Không phải thuộc tính nào cũng hỗ trợ transition, animation.
+2.Không nên tác động transition vào hover, active,v.v...
+*/

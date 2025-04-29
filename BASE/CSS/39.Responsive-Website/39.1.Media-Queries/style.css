@@ -1,0 +1,57 @@
+.box {
+  background: blue;
+  width: 300px;
+  height: 300px;
+}
+
+/* 1. max width: Cho phép Tối đa màn hình rộng bao nhiêu thì áp dụng */
+/* Ví dụ: Nếu màn hình <= 600px thì áp dụng CSS riêng */
+@media (max-width: 600px) {
+  .box {
+    background: red;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media print {
+  .box {
+    background: yellow;
+  }
+}
+
+/* 2. min width: Màn hình rộng tối thiểu bao nhiêu thì áp dụng */
+/* Nếu màn hình >= 1000px thì áp dụng CSS riêng */
+@media (min-width: 1000px) {
+  .box {
+    background: green;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* 3. (min-width: 600px) and (max-width: 1000px) */
+/* Nếu kích thước màn hình nằm trong khoảng 600px -> 1000px thì áp dụng */
+/* chiều rộng (tối thiểu là 600px) và (tối đa là 1000) thì áp dụng */
+@media (min-width: 600px) and (max-width: 1000px) {
+  .box {
+    background: burlywood;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px), (min-width: 1000px) {
+  .box {
+    background: lightcoral;
+  }
+}
+
+/* 4. Áp dụng khi màn hình xoay ngang */
+@media (orientation: landscape) {
+  .box {
+    background: darkmagenta;
+    width: 600px;
+    height: 400px;
+  }
+}
