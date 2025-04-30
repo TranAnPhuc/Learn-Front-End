@@ -1,0 +1,62 @@
+p {
+  font-size: 5rem;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background: red;
+  color: #fff;
+  font-size: 3rem;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.box:hover {
+  /* 1. Rotate (Xoay) */
+  /* transform: rotate(45deg); */
+  /* có thể gõ tắt */
+  /* rotate: 45deg; */
+
+  /* 2. Scale (Co giãn) sử dụng scale để co giãn phần tử theo chiều ngang và chiều dọc.
+  => Nhập 1 đối số thì co giãn cả 2 chiều
+  */
+  /* transform: scale(1.5); */
+  /* có thể gõ tắt */
+  /* scale: 1.5; */
+
+  /* 3. Skew (Biến dạng) sử dụng để nghiêng phần tử theo 2 chiều*/
+  /* nghiêng cạnh trái, cạnh phải
+  (theo chiều x) */
+  /* transform: skewX(20deg); */
+  /* transform: skew(20deg); */
+  /* nghiêng cạnh trên, cạnh dưới
+  (theo chiều y) */
+  /* transform: skewY(20deg); */
+  /* nghiêng cả x và y */
+  /* transform: skew(20deg, 20deg); */
+
+  /* 4. translate (dịch chuyển) sử dụng để di chuyển một phần tử theo chiều ngang và chiều dọc  */
+  /* dịch theo x */
+  /* transform: translate(20px); */
+  /* transform: translateX(20px); */
+  /* translate: -20px; */
+  /* dịch theo y */
+  /* transform: translateY(50px); */
+  /* dịch x và y */
+  /* transform: translate(50px, 50px); */
+  /* translate: 50px 50px; */
+
+  /* Một số lưu ý quan trọng
+  Lưu ý 1: Có thể dùng kết hợp nhiều thuộc tính
+  Lưu ý 2: Transform không đẩy được các phần tử xung quanh
+  Lưu ý 3: Có thể cần thêm prefix nếu dùng cho các trình duyệt cũ
+  */
+
+  /* Lưu ý 1: Có thể dùng kết hợp nhiều thuộc tính */
+  /* transform: scale(2) rotate(180deg); */
+
+  /* Lưu ý 2: Transform không đẩy được các phần tử xung quanh */
+  transform: scale(4);
+}

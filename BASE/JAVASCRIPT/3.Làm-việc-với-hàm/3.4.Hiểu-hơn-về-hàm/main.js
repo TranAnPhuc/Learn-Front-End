@@ -28,3 +28,12 @@ function showName() {
 showName();
 
 // 3.Định nghĩa hàm trong hàm?
+
+function showAge() {
+  function showAge2() {
+    console.log("Tôi 20 tuổi");
+  }
+  showAge2();
+}
+
+showAge();
