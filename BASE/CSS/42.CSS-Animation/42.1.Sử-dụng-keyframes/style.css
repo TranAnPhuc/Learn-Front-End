@@ -1,0 +1,94 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: yellow;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: spin_element 2s linear 0s; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name (tên của keyframes @keyframes - bắt buộc phải có)  */
+  animation-name: spin_element;
+  /* animation-duration (thời gian mà animation sẽ diễn ra: giây(s) hoặc mili giây(ms) - bắt buộc phải có) */
+  animation-duration: 2s;
+  /* animation-timing-function (xác định cách animation chuyển động qua thời gian,
+  chẳng hạn như linear, ease-in, ease-out, ease-in-out, và nhiều hàm chuyển động khác) */
+  animation-timing-function: linear;
+  /* animation-delay (thời gian trì hoãn trước khi animation bắt đầu, giây(s) hoặc mili giây(ms)) */
+  animation-delay: 0s;
+  /* animation-iteration-count (số lần lặp của animation)
+  1. Tùy chọ, mặc định giá trị là 1
+  2. Có thể là một số nguyên: 2, 7, 9,...
+  3. infinite để lặp lại vô hạn
+  */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction (xác định hướng của animation)
+  1. Tùy chọn, mặc định là: normal;
+  Animation sẽ chuyển động theo thứ tự bình thường từ keyframe xuất phát
+  đến keyframe kết thúc.
+  2. Reverse: Animation sẽ chuyển động ngược lại từ keyframe kết thúc về
+  keyframe xuất phát.
+  3. alternate: Animation sẽ lặp lại theo hướng normal, sau đó lặp lại theo
+  hướng reverse, và tiếp tục lặp lại theo cách đó.
+  4. alternate-reverse: Animation sẽ lặp lại theo hướng reverse, sau đó lặp lại
+  theo hướng normal, và tiếp tục lặp lại theo cách đó.
+  */
+  animation-direction: normal;
+  /* animation-fill-mode (xác định vị trí của phần tử sau khi kết thúc animation)
+  1. Tùy chọn, mặc định là: none -> Không có bất kỳ thay đổi gì
+  2. forwards: phần tử sẽ giữ giá trị của keyframe cuối cùng
+  sau khi animation kết thúc
+  3. backwards: ngay tại thời điểm bắt đầu, animation sẽ ở vị trí keyframe đầu tiên
+  4. both: Animation áp dụng cả forwards và backwards - tức là animation
+  sẽ bắt đầu tại keyframe đầu tiên và dừng lại ở keyframe cuối cùng
+  */
+  animation-fill-mode: both;
+}
+
+@keyframes spin_element {
+  from {
+    rotate: 30deg;
+  }
+  to {
+    rotate: 180deg;
+  }
+}
+
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 300px auto;
+  border-radius: 50%;
+  animation: animationMove 0.5s ease-in infinite;
+}
+
+/* animation với nhiều bước */
+@keyframes animationMove {
+  0% {
+    transform: translate(0, 0);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.404);
+  }
+  25% {
+    transform: translate(100px, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+  }
+  50% {
+    transform: translate(100px, 100px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+  }
+  75% {
+    transform: translate(0, 100px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+  }
+  100% {
+    transform: translate(0, 0);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.404);
+  }
+}
