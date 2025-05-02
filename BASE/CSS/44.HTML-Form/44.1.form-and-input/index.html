@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form and input</title>
+  </head>
+  <body>
+    <!-- 1.Khái quát: <form></form> là một thẻ dùng để tạo một biểu mẫu trên trang web,
+    cho phép người dùng nhập dữ liệu và gửi thông tin tới máy chủ 
+         2.Form Input:<input></input> là một thẻ dùng để tạo một biểu mẫu trên trang web,
+         cho phép người dùng nhập liệu
+    -->
+    <form action="">
+      <label for="username">Họ và tên: </label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Vui lòng nhập tên"
+        required
+        autocomplete="off"
+      />
+      <br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Vui lòng nhập mật khẩu"
+        required
+      />
+      <br />
+      <!-- Cách viết label khác -->
+      <label>
+        Email:
+        <input type="email" name="" id="" placeholder="Email" />
+      </label>
+
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
