@@ -1,0 +1,22 @@
+/* Pseudo-class :placeholder-shown (Chọn các thẻ input có placeholder đang được hiển thị
+-> hay nói cách khác là các thẻ input chưa được nhập liệu) */
+input:placeholder-shown {
+  background: rgba(95, 158, 160, 0.26);
+}
+
+input:not(:placeholder-shown) {
+  background: rgba(106, 142, 35, 0.219);
+}
+
+/* Pseudo-class :focus-within Được sử dụng để chọn phần tử cha chứa một phần tử đang
+được focus.
+Nó kích hoạt khi bất kỳ phần tử con nào của phần tử cha đang được "focus,"
+tức là người dùng đã chọn một phần tử con của phần tử cha đó. */
+
+.login-form:focus-within {
+  background: blue;
+}
+
+.login-form:focus-within input[value="Submit"] {
+  background-color: red;
+}

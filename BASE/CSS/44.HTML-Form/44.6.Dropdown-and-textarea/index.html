@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown and Textarea</title>
+  </head>
+  <body>
+    <!-- <textarea>
+    => Là 1 thẻ trong form được sử dụng để tạo
+    ra 1 ô văn bản có thể chứa nhiều dòng văn bản 
+    -->
+    <h2>1. Textarea</h2>
+    <form action="">
+      <label for="message">message: </label>
+      <br />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <br />
+      <input type="submit" value="Send me" />
+    </form>
+    <!-- <select>
+    => Được dùng để tạo danh sách trổ xuống - dropdown    
+    -->
+    <h2>2. Dropdown</h2>
+    <form action="">
+      <label for="color">Chọn màu: </label>
+      <select name="color" id="color" required>
+        <option value="">Chọn màu</option>
+        <option value="red">Đỏ</option>
+        <!-- selected (hiển thị ưu tiên trên trình duyệt) -->
+        <option value="green">Xanh lá</option>
+        <option value="blue">Xanh dương</option>
+        <option value="yellow">Vàng</option>
+      </select>
+      <button>Xác nhận màu gửi server</button>
+    </form>
+    <!-- <optgroup> 
+    => Dùng để gom nhóm danh sách trổ xuống - dropdown    
+    -->
+    <h2>3. Optgroup</h2>
+    <form action="">
+      <label for="tinh-thanh">Chọn tỉnh: </label>
+      <select name="tinh-thanh" id="tinh-thanh" required>
+        <option value="">Chọn tỉnh</option>
+        <optgroup label="Miền Nam">
+          <option value="LA">Long An</option>
+          <!-- selected (hiển thị ưu tiên trên trình duyệt) -->
+          <option value="TPHCM">Thành Phố Hồ Chí Minh</option>
+          <option value="CM">Cà Mau</option>
+          <option value="DT">Đồng Tháp</option>
+        </optgroup>
+        <optgroup label="Miền Bắc">
+          <option value="HN">Thủ Đô Hà Nội</option>
+          <!-- selected (hiển thị ưu tiên trên trình duyệt) -->
+          <option value="HL">Hạ Long</option>
+          <option value="BN">Bắc Ninh</option>
+          <option value="BK">Bắc Kạn</option>
+        </optgroup>
+      </select>
+      <button>Xác nhận tỉnh gửi server</button>
+    </form>
+  </body>
+</html>
