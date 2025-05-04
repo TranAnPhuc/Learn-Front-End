@@ -40,7 +40,7 @@ console.log(languages.join(" - "));
 // console.log(languages.splice(1, 0, "Dart", "Java"));
 // console.log(languages);
 
-// 8.Concat (đùng để nối array)
+// 8.Concat (dùng để nối array)
 // var languages2 = ["Dart", "Java"];
 
 // console.log(languages.concat(languages2));
