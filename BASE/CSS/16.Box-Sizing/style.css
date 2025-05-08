@@ -12,4 +12,5 @@
   => Cụ thể hơn là nó bao gồm hay không bao gồm padding và border trong kích thước đó)
   */
   box-sizing: border-box;
+  padding: 100px;
 }

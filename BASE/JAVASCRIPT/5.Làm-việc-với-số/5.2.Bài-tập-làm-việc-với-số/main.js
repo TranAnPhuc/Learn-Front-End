@@ -46,7 +46,7 @@ console.log("Bài 5: Kiểm tra số dương / âm / bằng 0");
 function checkNumber(n) {
   if (n > 0) {
     return console.log("Đây là số dương");
-  } else if ((n = 0)) {
+  } else if (n === 0) {
     return console.log("Đây là số bằng 0");
   } else {
     return console.log("Đây là số âm");

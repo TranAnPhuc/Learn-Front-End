@@ -44,3 +44,11 @@ function circlePerimeter(radius) {
 }
 
 circlePerimeter(10);
+
+// Bài 5: Tìm số bé nhất trong mảng
+console.log("Bài 5: Tìm số bé nhất trong mảng");
+function minNum(arr) {
+  return Math.min(...arr);
+}
+
+console.log(minNum([3, 1, 20, -1, 30]));
