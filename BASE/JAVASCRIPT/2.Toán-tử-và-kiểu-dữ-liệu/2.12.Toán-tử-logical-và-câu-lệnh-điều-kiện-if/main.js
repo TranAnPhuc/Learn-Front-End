@@ -16,7 +16,7 @@ if (resultAnd) {
 }
 
 // Cách hoạt động của toán tử || là sẽ kiểm tra từ trái sang phải nếu phát hiện
-// giá trị nào không phải là false thì sẽ lấy và gán vào biến không tiếp kiểm tra
+// giá trị nào không phải là false thì sẽ lấy và gán vào biến không tiếp tục kiểm tra
 // các giá trị còn lại.
 var resultOr = "A" || "B" || "C" || "D";
 
