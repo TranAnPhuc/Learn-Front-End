@@ -12,7 +12,7 @@ CHUỖI TRONG JAVASCRIPT
 */
 
 // 1.Tạo chuỗi: Có 2 cách
-var fullName1 = "An Phúc";
+var fullName1 = "An Phúc"; // Nên dùng cách này vì nó ngắn và trả về string thay vì object như phía dưới
 var fullName2 = new String("An Phúc");
 
 // 2.Một số case sử dụng backslash (\)

@@ -1,8 +1,8 @@
 /*
     Object Prototype - Basic
 
-    1. Prototype là gì?
-    2. Sử dụng khi nào?
+    1. Prototype là gì? (prototype là một cơ chế cốt lõi cho phép các object kế thừa thuộc tính và phương thức từ nhau.)
+    2. Sử dụng khi nào? (khi cần tạo nhiều object có cùng hành vi (phương thức) — để tiết kiệm bộ nhớ và tổ chức mã tốt hơn.)
 */
 function User(firstName, lastName, avatar) {
   this.firstName = firstName;

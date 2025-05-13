@@ -1,4 +1,6 @@
 // Object constructor (xây dựng đối tượng)
+// Object Constructor là cách tạo object dựa trên một hàm khởi tạo (constructor function) – cho phép bạn tạo nhiều
+// object giống nhau về cấu trúc có thuộc tính hoặc phương thức giống nhau khác nhau về giá trị.
 
 // User(thamso1,thamso2,...)
 function User(firstName, lastName, avatar) {

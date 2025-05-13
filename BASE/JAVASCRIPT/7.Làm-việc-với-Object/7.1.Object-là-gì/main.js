@@ -1,4 +1,5 @@
 // Object trong Javascript
+// Object (đối tượng) là một kiểu dữ liệu phức tạp dùng để lưu trữ nhiều giá trị dưới dạng cặp key-value (khóa - giá trị).
 
 // tạo key value từ 1 biến
 var emailKey = "email";

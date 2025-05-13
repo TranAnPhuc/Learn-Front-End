@@ -2,8 +2,8 @@
 Hàm (function) trong Javascript
 
 1.Hàm?
-    - Một khối mã
-    - Làm 1 việc cụ thể
+    - Hàm là một khối mã (code) được đặt tên, dùng để thực hiện một nhiệm vụ cụ thể.
+    Hàm giúp bạn tái sử dụng mã, giảm lặp lại, và chia nhỏ chương trình thành các phần dễ quản lý hơn.
 
 2.Loại hàm
     - Built-in
