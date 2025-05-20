@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 7</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .img {
+        width: 500px;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+      }
+      .change-img {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: #333;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./gojo.webp" alt="" class="img" />
+    <button class="change-img">Ẩn/Hiện</button>
+    <script src="./main.js"></script>
+  </body>
+</html>

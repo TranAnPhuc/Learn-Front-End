@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM events</title>
+  </head>
+  <body>
+    <!-- Viết DOM events dưới dạng Attribute events (phải thêm tiền tố on trước events) -->
+    <h1 onclick="console.log(this)">
+      <!-- Khi click vào 1 element con đang nằm trong 1 element có DOM events
+        sẽ bị hiện tượng nổi bọt  
+        -->
+      <span>DOM Events</span>
+    </h1>
+    <button class="change-color">Click vào đây</button>
+    <p class="p">DOM Events 1</p>
+    <p class="p">DOM Events 2</p>
+    <p class="p">DOM Events 3</p>
+    <script src="./main.js"></script>
+  </body>
+</html>
