@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+textarea {
+  margin-top: 20px;
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#total-character {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
