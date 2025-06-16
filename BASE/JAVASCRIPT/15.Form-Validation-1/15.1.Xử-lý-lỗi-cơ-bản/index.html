@@ -72,7 +72,12 @@
       // Mong muốn của chúng ta
       Validator({
         form: "#form-1",
-        rules: [Validator.isRequired("#fullname"), Validator.isEmail("#email")],
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired("#fullname"),
+          Validator.isEmail("#email"),
+          Validator.minLength("#password", 6),
+        ],
       });
     </script>
   </body>
