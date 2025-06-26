@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background: #7a78788f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container {
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px black;
+}
+
+#checkNumber {
+  padding: 5px 10px;
+}
+
+#checkNumber::-webkit-outer-spin-button,
+#checkNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background: rgba(255, 0, 0, 0.274);
+}
+
+.result {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
