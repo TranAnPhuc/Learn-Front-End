@@ -45,5 +45,5 @@ console.log(boxNode);
 // Khi dùng cách này giúp đi từ thằng boxNode vào các thằng con của nó
 console.log(boxNode.querySelectorAll("li"));
 
-// document.write (đoạn script js được đặt ở đâu thì sẽ viết ở đó - có thể ghi DOM sau khi chạy xong)
+// document.write (đoạn script js được đặt ở đâu thì sẽ viết ở đó - có thể ghi đè DOM sau khi chạy xong)
 document.write("Hello");
