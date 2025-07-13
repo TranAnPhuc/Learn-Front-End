@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3e8e886;
+}
+
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 5rem;
+}
+
+.count {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.185);
+  border-radius: 9999px;
+  display: none;
+  font-size: 2rem;
+}
+
+.count.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(192, 192, 192, 0.247);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.images img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-90%);
+}
+
+.name {
+  margin-top: 230px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 2.5rem;
+}
+
+#add {
+  width: 24px;
+  height: 24px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 999999px;
+  cursor: pointer;
+}
